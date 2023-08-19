@@ -1,0 +1,18 @@
+DOM (document object model) Manipulation
+Event Handling
+Making Asynchronous Request.
+Animation & Effects.
+Data Manipulation(sorting, filtering)
+storing data(cookies, localstorage)
+Single page applications(SPA)
+creating APIs & web services(Nodejs, Deno)
+
+why you should learn JS
+popularity
+versatility
+relatively easy to learn
+community
+
+Static Typing vs Dynamic Types
+JS is a dynamically-typed language. this means that we do not explicitly define the types of our variables. Many other languages are statically-typed such as c, c++ and java.
+TypeScript is a superset of Js, which allows static-typing. This can make your code verbose and less prone to errors.
