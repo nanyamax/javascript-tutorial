@@ -93,15 +93,13 @@ console.log(`${userOne} ${userTwo}`);
 
 // while reference values are stored on the heap eg. objects, arrays and any other type of object.
 let callerOne = {
-  name: "shaun",
+  name: 'shaun',
   age: 18,
 };
 let callerTwo = callerOne;
 console.log(`${callerOne[1]} ${callerTwo[1]}`);
 
-
-
-// interacting with a browser
-- document Object Model(DOM)
-- Add, change and delete content 
-- Make a cool pop-up effect in the web page
+// // interacting with a browser
+// - document Object Model(DOM)
+// - Add, change and delete content
+// - Make a cool pop-up effect in the web page
