@@ -501,3 +501,125 @@
 
 // high level array method( they take in a function as an argument, which this is this called a callback function. in this callback function, we can pass in a variable for each element in that array )
 // FOR EACH(ARRAY.FOREACH) - does not return anything , it just loops through the array and does sth specific.
+
+// const socials = ['twitter', 'LinkedIn', 'Facebook'];
+// socials.forEach(function (index, item, arr) {
+//   console.log(`${index} - ${item}`, arr);
+// });
+// // socials.forEach((item) => console.log(item));
+
+// const food = ['rice', 'beans', 'yam'];
+
+// // callback function
+// function logSocial(social) {
+//   console.log(social);
+// }
+
+// socials.forEach(logSocial);
+// food.forEach(logSocial);
+// for array of objects.
+
+// const socialObj = [
+//   { name: 'facebook', url: 'http//facebook.com' },
+//   { name: 'twitter', url: 'http//twitter.com' },
+//   { name: 'instagram', url: 'http//instagram.com' },
+//   { name: 'LinkedIn', url: 'http//LinkedIn.com' },
+// ];
+// socialObj.forEach((key) => console.log(key.name));
+
+// the difference btw forEach and other array methods is that , they return sth. In most cases the return a modified array
+
+// Array.filter
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14];
+
+// const evenNum = numbers.filter((number) => number % 2 === 0);
+
+// console.log(evenNum);
+
+// using forEach
+// let evenNum = [];
+// numbers.forEach((number) => {
+//   if (number % 2 == 0) {
+//     evenNum.push(number);
+//   }
+// });
+// console.log(evenNum);
+// const companies = [
+//   { name: 'Company one', category: 'Finance', start: 1981, end: 2004 },
+//   { name: 'Company Two', category: 'Retail', start: 1992, end: 2008 },
+//   { name: 'Company Three', category: 'Auto', start: 1999, end: 2007 },
+//   { name: 'Company Four', category: 'Retail', start: 1989, end: 2010 },
+//   { name: 'Company Five', category: 'Technolgy', start: 2009, end: 2014 },
+//   { name: 'Company Six', category: 'Finance', start: 1987, end: 2010 },
+//   { name: 'Company Seven', category: 'Auto', start: 1986, end: 1996 },
+//   { name: 'Company Eight', category: 'Technolgy', start: 2011, end: 2016 },
+//   { name: 'Company Nine', category: 'Retail', start: 1981, end: 1989 },
+// ];
+
+// // const retailComp = companies.filter((key) => {
+// //   return key.category === 'Retail';
+// // });
+// // console.log(retailComp);
+
+// // const retailComp = companies.filter((key) => {
+// //   return key.start >= 1980 && key.end <= 2005;
+// // });
+// // console.log(retailComp);
+
+// const longlastComp = companies.filter((key) => {
+//   return key.end - key.start >= 10;
+// });
+// console.log(longlastComp);
+
+// Array.map
+// const numbers = [1, 2, 3, 4, 5];
+
+// const doubleNum = numbers.map((number) => number * 2);
+// console.log(doubleNum);
+
+// same with forEach
+// const doubleNum = [];
+// numbers.forEach((number) => {
+//   doubleNum.push(number * 2);
+// });
+// console.log(doubleNum);
+
+// const nameComp = companies.map((company) => company.name);
+// const nameComp = companies.map(
+//   (company) => `${company.name}, ${company.category}`
+// or
+// {return {
+//   name: company.name,
+//   category: compa.category,
+// };
+// }
+// // );
+
+// // console.log(nameComp);
+// const namecomp = companies.map((company) => {
+//   return {
+//     name: company.name,
+//     length: company.end - company.start + 'years',
+//   };
+// });
+// console.log(namecomp);
+//
+// const squareAndDouble = numbers
+//   .map((number) => Math.sqrt(number))
+//   .map((sqrt) => sqrt * 2);
+
+// const squareAndDouble2 = numbers.map;
+// console.log(squareAndDouble);
+
+// // chaining different methods
+// const evenDouble = numbers
+//   .filter((number) => number % 2 === 0)
+//   .map((number) => number * 2);
+
+// console.log(evenDouble);
+
+// Array.reduce
+// accumulator can also be called previous value, current value and inital value.
+const sum = numbers.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
