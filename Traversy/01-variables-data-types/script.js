@@ -530,7 +530,7 @@
 // the difference btw forEach and other array methods is that , they return sth. In most cases the return a modified array
 
 // Array.filter
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14];
 
 // const evenNum = numbers.filter((number) => number % 2 === 0);
 
@@ -620,6 +620,90 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14];
 
 // Array.reduce
 // accumulator can also be called previous value, current value and inital value.
-const sum = numbers.reduce(function (accumulator, currentValue) {
-  return accumulator + currentValue;
-}, 0);
+// const sum = numbers.reduce(function (accumulator, currentValue) {
+//   return accumulator + currentValue;
+// }, 0);
+
+// const sum2 = numbers.reduce(
+//   (accumulator, currentValue) => accumulator + currentValue,
+//   0
+// );
+// console.log(sum2);
+// const cart = [
+//   { id: 1, name: 'product 1', price: 130 },
+//   { id: 2, name: 'product 2', price: 150 },
+//   { id: 3, name: 'product 3', price: 175 },
+// ];
+// const total = cart.reduce((acc, amount) => acc + amount.price, 0);
+// console.log(total);
+
+// Array Method challenge
+// const people = [
+//   {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     email: 'john@gmail.com',
+//     phone: '111-111-111',
+//     age: 30,
+//   },
+
+//   {
+//     firstName: 'Jane',
+//     lastName: 'Poe',
+//     email: 'jane@gmail.com',
+//     phone: '222-222-222',
+//     age: 25,
+//   },
+//   {
+//     firstName: 'Bob',
+//     lastName: 'Foe',
+//     email: 'bob@gmail.com',
+//     phone: '333-333-333',
+//     age: 45,
+//   },
+//   {
+//     firstName: 'Sara',
+//     lastName: 'Soe',
+//     email: 'sara@gmail.com',
+//     phone: '444-444-444',
+//     age: 19,
+//   },
+//   {
+//     firstName: 'Jose',
+//     lastName: 'Koe',
+//     email: 'jose@gmail.com',
+//     phone: '555-555-555',
+//     age: 23,
+//   },
+// ];
+// const youngPeople = people
+//   .filter((names) => names.age <= 25)
+//   .map((names) => {
+//     return {
+//       name: `${names.firstName} ${names.lastName}`,
+//       email: names.email,
+//     };
+//   });
+
+// console.log(youngPeople);
+
+// challenge 2
+// const numbers = [2, -30, 50, 20, -12, -9, 7];
+// const positiveSum = numbers
+//   .filter((sum) => sum > 0)
+//   .reduce((acc, cur) => acc + cur, 0);
+
+// console.log(positiveSum);
+
+// challenge 3
+// const words = ['coder', 'programmer', 'developer'];
+// const capitalizedWords = words.map(
+//   (eachWord) => eachWord[0].toUpperCase() + eachWord.slice(1)
+// );
+// console.log(capitalizedWords);
+
+// The Document Object Model => this is essentially the interface that allows us to interact with the page element dynamically.
+// - Programming interface for web/HTML elements.
+// - Structure that we can interact with via JavaScript
+// - Includes tags, attributes, text nodes, etc
+// - Represented as a tree structure
