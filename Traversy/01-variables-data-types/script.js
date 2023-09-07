@@ -707,3 +707,12 @@
 // - Structure that we can interact with via JavaScript
 // - Includes tags, attributes, text nodes, etc
 // - Represented as a tree structure
+
+// A form is always going to be 'get' method unless you specifically set it to 'post'
+// the output of document.any method/property is known as html collection
+// you can access a document.form with its index but you can't access it with the forEach method
+// using a query selector will give what is called a nodelist
+// for a HTML collection to be accessed with the forEach method you have to convert it to an Array using the Array.from.
+const forms = Array.from(document.forms);
+forms.forEach((form) => console.log(form));
+// html collection is array-like but not actually an array
